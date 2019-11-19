@@ -1,7 +1,7 @@
 @import 'nav.css';
 
 body {
-  background-color: goldenrod;
+  background-color: rgb(0, 0, 0);
   box-sizing: border-box;
 }
 
@@ -12,6 +12,7 @@ body {
 
 img {
   max-width: 100%;
+  box-shadow: 0px 1px 9px 0px rgba(9,9,28,0.8);
 }
 
 .fishies {
@@ -23,16 +24,70 @@ img {
 
 .fishies__card {
   flex-basis: 28%;
-  width: 28%;
-  border: 2px solid gray;
-  padding: 0 8px;
-  margin: 0 4px;
-  margin-bottom: 8px;
+  width: auto%;
+  border: .08em solid black;
+  padding: .8em;
+  margin: 10px 0 10px 0;
+  border-radius: 3%;
+  background-color: white;
+
+ /* HOVER OFF */
+ transition: ease-in-out;
+ transition-delay: 1s;
+ transition-duration: 1s;
+}
+
+h4 {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  display: flex;
+}
+
+.tip {
+  /* border:.1px groove black; */
+  padding: 10px;
+  background-color: whitesmoke;
+
+   /* HOVER OFF */
+ transition: ease-in-out;
+ transition-delay: 1s;
+ transition-duration: 1s;
+ 
+}
+
+.highlightTip:hover {
+  box-shadow: 5px 5px 4px 3px #86b7df;
+  border:.1px groove black;
+
+  transform: translateX(-9px) translateY(-15px);
+  transition: ease-in-out;
+  transition-delay: 44ms;
+  transition-duration: 1s;
+}
+
+.highlightFish:hover {
+  box-shadow:
+          8px 8px 4px 3px #86b7df,
+          8px 8px 3px 2px #86b7df,
+          8px 8px 4px 1px #86b7df;
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+  background: slategrey;
+  color: lightgoldenrodyellow;
+  transition: ease-in-out;
+  transition-delay: 65ms;
+  transition-duration: 1s;
+  border: .1em solid black;
 }
 
 aside{
   flex-basis: 30%;
   padding: 0 5px;
+  background: black;
+  height: auto;
 }
 
 @media (max-width: 600px) {
